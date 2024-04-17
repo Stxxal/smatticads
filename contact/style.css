@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Varela+Round&display=swap);
+
+*,
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    /* overflow: hidden */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+a {
+    color: #000;
+}
+
+header {
+    filter: blur(0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    transition: .6s;
+    padding: 40px 100px;
+    z-index: 10;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    height: 7vh;
+    ;
+}
+
+.headerenclosure a {
+    display: block;
+    position: relative;
+    padding: .2em 0;
+    color: #000 !important;
+    right: 6vw;
+}
+
+.headerenclosure a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .1em;
+    background-color: #cecbcb;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms
+}
+
+.headerenclosure a:focus::after,
+.headerenclosure a:hover::after {
+    opacity: 1;
+    transform: translate3d(0, .2em, 0);
+}
+
+header.sticky {
+    padding: 5px 100px;
+    filter: drop-shadow(0 0 .75rem #000);
+    backdrop-filter: blur(1px);
+    background-color: #fff;
+}
+
+header .logo,
+header ul li {
+    position: relative;
+    font-weight: 700;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: .6s;
+    padding: 0;
+    height: 8vh;
+    left: 5vw;
+}
+
+header ul,
+header ul li a {
+    position: relative;
+    right: 10%;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600px;
+    transition: .6%;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+section.hero {
+    background: url(/images/blob-glass-blue.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.head,
+.svg {
+    position: absolute;
+}
+
+.svg {
+    width: 35%;
+    top: 30%;
+    /* border: #c300ff solid 3px; */
+}
+
+.head {
+    color: #000;
+    text-align: left;
+    width: 35vw;
+    left: 10%;
+    top: 39%;
+    /* border: #c300ff solid 3px; */
+}
+
+.contact {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.text {
+    font-size: 1vw;
+    letter-spacing: 2px;
+}
+
+.bottom-bar {
+    width: 100%;
+    height: 9vh;
+    background: #3782c0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* 
+                                                ========================
+                                                |    From home start   |
+                                                ========================
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #fff;
+    top: 30vh;
+    height: 42vh;
+    width: 40vw;
+    gap: 50px;
+    left: 50%;
+    position: relative;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 5%;
+    padding: 1vw;
+
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    font-size: 1.4vw;
+    font-family: "Varela Round", sans-serif;
+
+    transition: all ease .3s;
+}
+
+.grid-item:hover {
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+    transform: scale(1.01);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all ease .3s;
+}
+
+/* 
+                                                ========================
+                                                |    From home end     |
+                                                ========================
+*/
+
+
+.active {
+    text-decoration: underline;
+}
+
+
+.small {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

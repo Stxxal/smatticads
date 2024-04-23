@@ -341,6 +341,7 @@ section.hero {
     top: 10vh;
     gap: 2vw;
     position: relative;
+    margin: 40px;
 
 }
 
@@ -359,6 +360,7 @@ section.hero {
     text-align: left;
     justify-content: center;
     align-items: center;
+    margin: 30px;
 
 }
 
@@ -617,4 +619,60 @@ footer {
 
 .input:focus {
     box-shadow: 0 0 0 .15vw skyblue;
+}
+
+.sec3 {
+    border: #00ff2a solid 1px;
+}
+
+#resp {
+    opacity: 0;
+    z-index: 0;
+    visibility: none;
+    height: 0;
+}
+
+@media (max-width: 1500px) {
+
+    section {
+        height: 0;
+
+    }
+
+    body {
+        overflow: hidden;
+        background-image: url(/images/blob-glass-blue.jpg);
+    }
+
+
+    #resp {
+        background-color: linear-gradient(rgba(34, 160, 199, 0.8), rgba(0, 230, 57, 0.8)8);
+        z-index: 9999;
+        opacity: 1;
+        padding: 25vw;
+        height: 100vh;
+        font-size: 2rem;
+        width: 100%;
+        max-height: 500vh;
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        overflow: hidden;
+
+    }
+
+    section {
+        font-size: 0.5rem;
+    }
+
+    * {
+        opacity: 0;
+    }
+
 }

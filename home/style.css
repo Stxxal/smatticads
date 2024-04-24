@@ -456,7 +456,7 @@ section.hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
 }
 
 .text {
@@ -516,7 +516,7 @@ footer {
 .svg-2,
 .svg-3 {
     position: absolute;
-    bottom: -240vh;
+    bottom: -190vh;
     /* border: #1b6f7a solid 1px; */
     left: 0;
     width: 100%;
@@ -621,9 +621,7 @@ footer {
     box-shadow: 0 0 0 .15vw skyblue;
 }
 
-.sec3 {
-    border: #00ff2a solid 1px;
-}
+
 
 #resp {
     opacity: 0;
@@ -675,4 +673,10 @@ footer {
         opacity: 0;
     }
 
+}
+
+.credit {
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
 }

@@ -249,3 +249,12 @@ section {
     }
 
 }
+
+.logo {
+    text-decoration-style: none;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+

@@ -21,7 +21,7 @@ header {
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    position: relative;
+
 }
 
 :root {
@@ -58,7 +58,7 @@ header {
 
 .headerenclosure a {
     display: block;
-    position: relative;
+
     padding: .2em 0;
 }
 
@@ -89,7 +89,7 @@ header.sticky {
 
 header .logo,
 header ul li {
-    position: relative;
+
     font-weight: 700;
 }
 
@@ -106,7 +106,7 @@ header .logo {
 
 header ul,
 header ul li a {
-    position: relative;
+
     right: 10%;
 }
 
@@ -147,7 +147,6 @@ section {
 
     display: flex;
     width: 100%;
-    height: 200%;
     background: url(/images/blob-glass-blue.jpg);
 }
 
@@ -165,16 +164,19 @@ section {
     -webkit-backdrop-filter: blur(7.2px);
     border: 2px solid rgba(255, 255, 255, 0.3);
     margin-top: 18vh;
-    background: url(/images/blob-glass-blue.jpg);
     letter-spacing: 2px;
     font-size: 1.5rem;
     line-height: 35px;
+    max-height: fit-content;
+    height: auto;
+    padding-bottom: 3vh;
+    margin-bottom: 10vh;
 
 }
 
 .heading {
     font-size: 2rem;
-    position: relative;
+
     top: 3vh;
     color: #fff;
     font-weight: 700;
@@ -183,7 +185,7 @@ section {
 
 .bruh1 {
 
-    position: relative;
+
     top: 6vh;
     letter-spacing: 2px;
     font-size: 1.1rem;
@@ -191,10 +193,59 @@ section {
 }
 
 .bruh2 {
-    position: relative;
+
     top: 13vh;
     letter-spacing: 2px;
     font-size: 1.5rem;
     line-height: 35px;
     font-weight: 900;
+}
+
+.bruh3 {
+
+    top: 14vh;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+    .text {
+        text-align: left;
+        font-size: 0.5rem;
+        width: auto;
+    }
+
+    .heading {
+        font-size: 1rem;
+
+        top: 3vh;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: -1px;
+        line-height: 140%;
+    }
+
+    .bruh1 {
+
+
+        top: 6vh;
+        letter-spacing: 2px;
+        font-size: 0.55rem;
+
+    }
+
+    .bruh2 {
+
+        top: 13vh;
+        letter-spacing: 2px;
+        font-size: 0.75rem;
+
+        font-weight: 900;
+    }
+
+    .bruh3 {
+
+        top: 14vh;
+        font-size: 0.6rem;
+    }
+
 }

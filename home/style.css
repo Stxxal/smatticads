@@ -689,6 +689,12 @@ footer {
     left: 2vw;
 }
 
+.credit1 {
+    position: absolute;
+    top: 13vh;
+    left: 2vw;
+}
+
 .imagebruh {
     left: 1vw;
     position: absolute;

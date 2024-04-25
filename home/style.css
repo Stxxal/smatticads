@@ -481,8 +481,9 @@ footer {
     background: linear-gradient(#234BCA, #234BCA);
     color: #fff;
     justify-content: center;
-    height: 30vh;
+    height: 1vh;
     bottom: 0;
+    border: #007592 solid 3px;
     margin-top: 10vh;
     font-size: .8vw;
     letter-spacing: 2px;
@@ -491,8 +492,14 @@ footer {
     text-transform: uppercase;
     border-top: 1px solid #d0d7d8;
     margin-top: 10vh;
+    position: inherit;
+
+    z-index: 333;
 }
 
+.footer {
+    background: #234BCA;
+}
 
 
 
@@ -535,6 +542,7 @@ footer {
     position: absolute;
     z-index: 12;
     padding: 10vh;
+    background: #234BCA;
 }
 
 .footer-column {
@@ -679,4 +687,10 @@ footer {
     position: absolute;
     top: 10vh;
     left: 2vw;
+}
+
+.imagebruh {
+    left: 1vw;
+    position: absolute;
+    max-width: 49vh;
 }

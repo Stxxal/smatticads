@@ -312,6 +312,8 @@ section.hero {
     transition: ease-out .4s;
     box-shadow: rgba(72, 135, 202, .8)0 0 30px 0;
     transform: scale(1.04);
+    border: 1px solid #466e9c;
+
 }
 
 .sec2 {
@@ -366,9 +368,11 @@ section.hero {
 
 .grid-item,
 .grid-item-span-3 {
-    border: 1px solid rgba(0, 0, 0, .8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
     background-color: #131516;
     font-size: 30px;
+
+
 }
 
 .grid-item {
@@ -667,20 +671,9 @@ footer {
 
 
 @media (max-width: 600px) {
-
-    body {
-        overflow: hidden;
-
-    }
-
-    section {
-        font-size: 0.5rem;
-    }
-
     * {
-        opacity: 0;
+        opacity: 1
     }
-
 }
 
 .credit {
